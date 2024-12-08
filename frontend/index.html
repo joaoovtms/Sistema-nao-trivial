@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cubagem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Cubagem para Medicamentos</h1>
+        <form id="cubagemForm">
+            <div id="produtos">
+                <div class="produto">
+                    <label for="medicamento">Medicamento:</label>
+                    <select name="medicamento" class="medicamento">
+                        <option value="Paracetamol">Paracetamol</option>
+                        <option value="Dipirona">Dipirona</option>
+                        <option value="Shampoo">Shampoo</option>
+                    </select>
+
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" name="quantidade" class="quantidade" min="1" required>
+                </div>
+            </div>
+            <button type="button" id="addProduto">Adicionar Produto</button>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
